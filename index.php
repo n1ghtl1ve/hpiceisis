@@ -16,21 +16,30 @@
 <header>OpIceIsis-Homepage</header>
 
 <nav>
-Add<br>
-News<br>
-Guides<br>
+<li>Start</li>
+<li>News</li>
+<li>Guides</li>
 </nav>
 
 <section>
-	<h1>#OpIceIses</h1>
-	<p>Welcome to #OpIceIsis</p>
+<form>
+Name:
+<input type='text' name='name'><br>
+Homepage:
+<input type='text' name='hp'><br>
+Twitter:
+<input type='text' name='twitter'><br>
+Facebook:
+<input type='text' name='fb'><br>
+Other Details:
+<input type='text' name='details'><br>
+</form>
 </section>
 
 <footer>
-Add<br>
-News<br>
-Guides<br>
-Grundgerüst by n1ght<br>
+<li>Start</li>
+<li>News</li>
+<li>Guides</li>
 </footer>
 </body>
 </html>
