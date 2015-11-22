@@ -76,12 +76,15 @@
                     
 		    <hr>
 		    <?php
-		    
+		    	// get page and convert to type string
 			$page = (string)$_GET['page'];
+			
+			// checks for pages and includes coresponding files
+			// === are used for "loose comparisons"
 			if($page === 'news' || $page === ''){
 				include './pages/news.php';
 			}
-			elseif($page == 'noob'){
+			elseif($page === 'noob'){
 				include './pages/noobs.php';
 			}
 			elseif($page === 'rules'){
@@ -95,8 +98,11 @@
 			}
 			elseif($page === 'json'){
 				include './pages/json.php';
+			}
+			// custom "fucking around message"
+			else{
+				echo "<center><h1>Stop fucking around!</h1></center>";
 			}			
-			
 		    ?>
                     </div>
                 </div>
