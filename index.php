@@ -1,45 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+  <title></title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>#OpIceISIS</title>
+  <link href="./css/style.css" rel="stylesheet">
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
-<header>OpIceIsis-Homepage</header>
+  
+  <div id="wrap">
+    <header id="header">
+      <a href="/index.php" class="logo">#OpISIS</a>
+      <nav>
+        <li><a class="sel" href="#">Add</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Guides</a></li>
+      </nav>
+    </header>
+    <div id="content">
+      Please enter in information about potential ISIS peoplez:
+      <form action="submit.php" method="POST">
+        <input type="text" placeholder="Name" name="name"/><br />
+        <input type="text" placeholder="Twitter" name="twitter"/><br />
+        <input type="text" placeholder="Facebook" name="fb"/><br />
+        <input type="text" placeholder="Homepage" name="hp" /><br />
+        <textarea placeholder="More (please specify)" name="other"></textarea>
+        <br />
+        <div class="g-recaptcha" data-sitekey="6LdTfBETAAAAALWssyHxulEl90QipfFYEybzCY_p"></div>
+        <input type="submit" text="Submit" name="submit" />
+      </form>
+    </div>
+    <footer>
+    </footer>
+  </div>
 
-<nav>
-<li>Start</li>
-<li>News</li>
-<li>Guides</li>
-</nav>
-
-<section>
-<form>
-Name:
-<input type='text' name='name'><br>
-Homepage:
-<input type='text' name='hp'><br>
-Twitter:
-<input type='text' name='twitter'><br>
-Facebook:
-<input type='text' name='fb'><br>
-Other Details:
-<input type='text' name='details'><br>
-</form>
-</section>
-
-<footer>
-<li>Start</li>
-<li>News</li>
-<li>Guides</li>
-</footer>
 </body>
+
 </html>

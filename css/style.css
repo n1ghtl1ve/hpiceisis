@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic');
+  
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Lato';
+  background-color: #ccc;
+  padding-top: 2em;
+}
+
+div#wrap {
+  width: 60%;
+  margin: 0 auto;
+}
+
+header#header {
+  width: 100%;
+  height: 50px;
+  background-color: #1c1c1c;
+  padding: 0 10px;
+  border-radius: 6px 6px 0 0;
+}
+
+a.logo {
+  float: left;
+  font-size: 1.5em;
+  color: #fff;
+  margin-left: 10px;
+  margin-top: 9px;
+}
+
+header#header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header#header nav li {
+  float: left;
+  padding-left: 15px;
+}
+
+header#header nav li a {
+  display: inline-block;
+  color: #ccc;
+  padding: 0.2em 0.8em;
+  border-radius: 2px;
+  transition: 0.2s;
+}
+
+
+header#header nav li a.sel {
+  color: #fff;
+  background-color: #404040;  
+}
+
+header#header nav li a:hover {
+  color: #fff;
+}
+
+#content {
+  width: 100%;
+  padding: 1em;
+  color: #333;
+  background-color: #fff;
+  min-height: 200px;
+}
+
+input[type="text"], textarea {
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  padding: 0.6em;
+  
+}
+
+textarea {
+  max-width: 500px;
+}
+
+input[type="text"]:focus {
+  background-color: #fff;
+}
+
+input[type="submit"] {
+  margin: 5px;
+  background-color: #1c1c1c;
+  border: 0;
+  padding: 0.6em 2em;
+  color: #fff;
+}
+
+input[type="submit"]:hover {
+  background-color: #111;
+}
+
+footer {
+  padding: 10px 0;
+}
+
+footer span {
+  color: #787878;
+  margin-top: 
+}
+
