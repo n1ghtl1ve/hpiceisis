@@ -48,8 +48,8 @@ echo '<p style="text-align: center;">New records created successfully';
 $stmt->close();
 $conn->close();
 
-
- 
+//Captcha Outcomment on new Serv
+/* 
 if(isset($_POST['submit']) && !empty($_POST['submit'])){
   if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])){
     //your site secret key
@@ -67,7 +67,9 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])){
   }else{
     $errMsg = 'Please click on the reCAPTCHA box.';
   }
-}
+} */
+
+
 ?>
 </div>
     <footer>
