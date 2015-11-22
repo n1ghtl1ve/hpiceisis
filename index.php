@@ -101,7 +101,7 @@
 			}
 			// custom "fucking around message"
 			else{
-				echo "<center><h1>Stop fucking around!</h1></center>";
+				echo "<center><h1>Stop fucking around!</h1></center><script>alert('stop');alert('fucking');alert('around');</script>";
 			}			
 		    ?>
                     </div>
