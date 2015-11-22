@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `isismembers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `realname` varchar(45) NOT NULL,
+  `realname` varchar(45) DEFAULT NULL,
   `twitter` varchar(45) DEFAULT NULL,
   `facebook` varchar(45) DEFAULT NULL,
   `homepage` varchar(45) DEFAULT NULL,
