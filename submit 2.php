@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <html>
 
 <head>
@@ -19,13 +20,11 @@
     </header>
         <div id="content">
 <?php
-//Captcha Session Start
-session_start();
 //Database
-$dbname = "opiceisis_isis";
+$dbname = "opiceisis";
 $servname = "localhost";
-$username = "opiceisis_isis";
-$pw = "musik4live";
+$username = "";
+$pw = "!";
 $conn = new mysqli($servname, $username, $pw, $dbname);
 
 //Check DB
@@ -48,10 +47,13 @@ $stmt -> execute();
 if (mysqli_affected_rows($conn)== 1){
 echo '<p style="text-align: center;">New records created successfully';
 }
+
 $stmt->close();
 $conn->close();
 }
-
+else {
+  echo "Wrong Captcha!";
+}
 ?>
 </div>
     <footer>
