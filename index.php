@@ -16,7 +16,7 @@
       <nav>
         <li><a class="sel" href="/index.php">Add</a></li>
         <li><a href="#">News</a></li>
-        <li><a href="/admin/view.php">View</a></li>
+        <li><a class="sel" href="./admin/view.php">View</a></li>
       </nav>
     </header>
     <div id="content">
@@ -29,7 +29,7 @@
         <textarea placeholder="More (please specify)" name="other"></textarea><br />
         <img src="captcha.php" alt="CaptchaPic" title="CaptchaPic" width="80" height="25" /><br />
         <input type="text" placeholder="Captcha" name="captcha" /><br />
-        <input type="submit" text="Submit" name="submit" />
+        <input type="submit" value="Submit" name="submit" />
       </form>
     </div>
     <footer>
